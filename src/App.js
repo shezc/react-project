@@ -2,6 +2,7 @@ import { Component } from 'react'
 import Hello from './components/Hello'
 import Welcome from './components/Welcome'
 import AxiosComponent from './components/Axios-component'
+import PubSubComponent from './components/Pub-sub-component'
 
 export default class Demo extends Component {
   render () {
@@ -10,6 +11,7 @@ export default class Demo extends Component {
         <Hello />
         <Welcome />
         <AxiosComponent />
+        <PubSubComponent />
       </div>
     )
   }
