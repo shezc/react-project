@@ -9,8 +9,12 @@ export default class App extends Component {
   componentDidMount () {
     this.token = PubSub.subscribe('szca', (name, data) => {
       this.setState({msg: data})
-      console.log(name, data)
+      console.log(name, data) // szca, 啦啦啦
     })
+  }
+
+  componentWillUnmount () {
+    PubSub.unsubscribe('szca')
   }
 
   render () {
